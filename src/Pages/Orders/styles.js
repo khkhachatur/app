@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize:'18px',
     fontWeight:'500',
     margin:'0',
+    textDecoration: 'none'
   },
   totalContainer:{
     display:'flex',

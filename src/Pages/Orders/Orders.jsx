@@ -43,7 +43,7 @@ const Orders = ( { cart, secondCart } ) => {
           />
           <dir className={classNames.menuList}>
             <div className={classNames.foodList}>
-              <Link to='/food'><h3 className={classNames.title}>Food</h3></Link>
+              <Link to='/food' style={{textDecoration: 'none'}}><h3 className={classNames.title}>Food</h3></Link>
               <ul className={classNames.list}>
                 {cart.filter((item) => item.subVariant === 'food').map(item => (
                   <ProdactCart key ={item.id} itemData ={item}/>
@@ -51,7 +51,7 @@ const Orders = ( { cart, secondCart } ) => {
               </ul>
             </div>
             <div className={classNames.drinksList}>
-              <Link to='/drinks'><h3 className={classNames.title}>Drinks</h3></Link>
+              <Link to='/drinks' style={{textDecoration: 'none'}}><h3 className={classNames.title}>Drinks</h3></Link>
               <ul className={classNames.list}>
                 {cart.filter((item) => item.subVariant === 'drinks').map(item => (
                   <ProdactCart key ={item.id} itemData ={item}/>
