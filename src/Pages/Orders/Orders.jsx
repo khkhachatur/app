@@ -15,7 +15,7 @@ import useStyles from './styles';
 const Orders = ( { cart, secondCart } ) => {
   const classNames = useStyles();
   const [totalPrice, setTotalPrice] = useState(0)
-
+  
   useEffect (() => {
     let price =0;
     let price2 =0
@@ -66,7 +66,7 @@ const Orders = ( { cart, secondCart } ) => {
               <p className={classNames.total}>{totalPrice}</p>
             </ul>
             <div className={classNames.buttonHolder}>
-              <button onClick={() => window.location.reload()} className={classNames.reset}>reset</button>
+              <a href="/home"> <button className={classNames.reset}>reset</button></a>
             </div>
           </dir>
         </div>
